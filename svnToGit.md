@@ -53,7 +53,9 @@
   
   # 확인
   $ git remote -v
-  
-  # push
+~~~
+
+6. push
+~~~
   $ git push origin master
 ~~~
