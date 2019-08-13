@@ -21,4 +21,11 @@
 ~~~
   * 설정되어 있는 svn 구조에 맞게 맞춰줘야 함.  
     필자의 경우 svn repository 안에 project folder 가 있고 그 안에 trunk, branches, tags 폴더가 있어서     
-    git svn ~[svn repository url]/project~ 이렇게 해주었음.
+    git svn ```[svn repository url]/project``` 이렇게 해주었음.  
+  * trunk, branches, tags 폴더 명도 다르게 셋팅 되어 있다면 그대로 맞춰줘야 함.  
+    
+      
+3. svn 히스토리 가져오기
+~~~
+  $ git svn fetch
+~~~
