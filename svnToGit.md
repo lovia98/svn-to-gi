@@ -21,4 +21,4 @@
 ~~~
   * 설정되어 있는 svn 구조에 맞게 맞춰줘야 함.  
     필자의 경우 svn repository 안에 project folder 가 있고 그 안에 trunk, branches, tags 폴더가 있어서     
-    git svn ~~~[svn repository url]/project~~ 이렇게 해주었음.
+    git svn ~[svn repository url]/project~ 이렇게 해주었음.
