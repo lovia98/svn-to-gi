@@ -29,3 +29,31 @@
 ~~~
   $ git svn fetch
 ~~~
+  * history가 많을수록 오래 걸린다. 
+  * 중간에 실패로 중단되더라도 계속 반복한다.  
+    (나의 경우 가져오다가 ```git gc``` 어쩌구 하는 오류가 나고 멈추기도 하고, 회사 svn서버가 멈추기도 하여서 3시간 정도가 걸렸다.)
+    
+4. 로컬&리모트 브랜치 확인
+~~~
+  $ git branch -a
+~~~
+  아래와 같이 svn remote branch를 확인 할 수 있다.
+~~~
+* master
+  remotes/svn/tags/0.1.0
+  remotes/svn/tags/0.2.0
+  remotes/svn/tags/0.3.0
+  remotes/svn/tags/0.4.0
+  remotes/svn/trunk
+~~~
+
+5. 새로운 git remote url 로 셋팅해줌.
+~~~
+  $ git remote add origin [git repository url]
+  
+  # 확인
+  $ git remote -v
+  
+  # push
+  $ git push origin master
+~~~
